@@ -1431,10 +1431,13 @@ H543+QQC, Raja Ka Rampur, Uttar Pradesh 207244, India
                             "img"
                         );
 
-
-                    img.src =
-                        image.download_url;
-
+img.src =
+    `https://raw.githubusercontent.com/` +
+    `${GITHUB_USERNAME}/` +
+    `${GITHUB_REPOSITORY}/main/` +
+    `${ARCHIVE_PATH}/` +
+    `${folderName}/` +
+    encodeURIComponent(image.name);
 
                     img.alt =
                         formatCategoryName(
@@ -1448,15 +1451,13 @@ H543+QQC, Raja Ka Rampur, Uttar Pradesh 207244, India
 
                     photo.appendChild(img);
 
+photo.onclick = () => {
 
-                    photo.onclick = () => {
+    openViewer(
+        img.src
+    );
 
-                        openViewer(
-                            image.download_url
-                        );
-
-                    };
-
+};
 
                     grid.appendChild(photo);
 
