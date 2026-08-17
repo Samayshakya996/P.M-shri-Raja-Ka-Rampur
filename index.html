@@ -2,12 +2,24 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>P.M. Shri Raja Ka Rampur</title>
 
+    <meta
+        name="description"
+        content="Official website of P.M. Shri Raja Ka Rampur Government School."
+    >
+
+
     <style>
+
+        /* =========================================
+           BASIC RESET
+        ========================================= */
 
         * {
             margin: 0;
@@ -15,69 +27,117 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             color: #222;
+
+            background: #f5f5f5;
+
+            line-height: 1.6;
+
         }
 
-        /* =========================
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+
+
+        /* =========================================
            NAVIGATION
-        ========================== */
+        ========================================= */
 
         nav {
+
             position: fixed;
+
             top: 0;
             left: 0;
+
             width: 100%;
 
             height: 70px;
 
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
 
             padding: 0 6%;
 
-            background: rgba(0, 0, 0, 0.55);
+            background:
+                rgba(0, 0, 0, 0.55);
 
             backdrop-filter: blur(10px);
 
             color: white;
 
             z-index: 1000;
+
         }
+
 
         .school-name {
+
             font-size: 20px;
+
             font-weight: bold;
+
         }
+
 
         .nav-links {
+
             display: flex;
+
             gap: 28px;
+
             list-style: none;
+
         }
+
 
         .nav-links a {
+
             color: white;
-            text-decoration: none;
+
             font-size: 15px;
+
             transition: 0.3s;
+
         }
+
 
         .nav-links a:hover {
+
             color: #ffd166;
+
         }
 
 
-        /* =========================
+
+        /* =========================================
            HERO
-        ========================== */
+        ========================================= */
 
         .hero {
 
@@ -95,6 +155,7 @@
 
             padding: 100px 20px;
 
+
             background:
 
                 linear-gradient(
@@ -104,33 +165,52 @@
 
                 url("images/school-background.png");
 
+
             background-size: cover;
 
             background-position: center;
 
         }
 
+
         .hero-content {
+
             max-width: 900px;
+
         }
+
 
         .hero h1 {
 
-            font-size: clamp(40px, 7vw, 75px);
+            font-size:
+                clamp(
+                    40px,
+                    7vw,
+                    75px
+                );
+
+            line-height: 1.15;
 
             margin-bottom: 15px;
 
         }
 
+
         .hero h2 {
 
-            font-size: clamp(20px, 3vw, 30px);
+            font-size:
+                clamp(
+                    20px,
+                    3vw,
+                    30px
+                );
 
             font-weight: normal;
 
             margin-bottom: 20px;
 
         }
+
 
         .hero p {
 
@@ -139,6 +219,7 @@
             margin-bottom: 30px;
 
         }
+
 
         .location-button {
 
@@ -152,13 +233,12 @@
 
             border-radius: 30px;
 
-            text-decoration: none;
-
             font-weight: bold;
 
             transition: 0.3s;
 
         }
+
 
         .location-button:hover {
 
@@ -169,15 +249,19 @@
         }
 
 
-        /* =========================
-           SECTIONS
-        ========================== */
+
+        /* =========================================
+           GENERAL SECTIONS
+        ========================================= */
 
         section {
 
-            padding: 80px 8%;
+            padding:
+                80px
+                8%;
 
         }
+
 
         .section-title {
 
@@ -189,6 +273,7 @@
 
         }
 
+
         .section-text {
 
             max-width: 850px;
@@ -197,18 +282,19 @@
 
             text-align: center;
 
-            line-height: 1.8;
-
             color: #666;
 
             font-size: 17px;
 
+            line-height: 1.8;
+
         }
 
 
-        /* =========================
+
+        /* =========================================
            ABOUT
-        ========================== */
+        ========================================= */
 
         #about {
 
@@ -217,15 +303,17 @@
         }
 
 
-        /* =========================
+
+        /* =========================================
            ARCHIVE
-        ========================== */
+        ========================================= */
 
         #archive {
 
             background: #f5f5f5;
 
         }
+
 
         .archive-intro {
 
@@ -237,12 +325,18 @@
 
         }
 
-        .archive-categories {
+
+        /* Automatically generated categories */
+
+        #archiveCategories {
 
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(220px, 1fr));
+                repeat(
+                    auto-fit,
+                    minmax(220px, 1fr)
+                );
 
             gap: 20px;
 
@@ -251,6 +345,7 @@
             margin: auto;
 
         }
+
 
         .archive-card {
 
@@ -263,17 +358,27 @@
             text-align: center;
 
             box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
+                0 5px 20px
+                rgba(0,0,0,0.08);
+
+            cursor: pointer;
 
             transition: 0.3s;
 
         }
 
+
         .archive-card:hover {
 
-            transform: translateY(-5px);
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(0,0,0,0.12);
 
         }
+
 
         .archive-icon {
 
@@ -283,22 +388,185 @@
 
         }
 
+
         .archive-card h3 {
 
             margin-bottom: 8px;
 
         }
 
+
         .archive-card p {
 
             color: #777;
 
+            font-size: 14px;
+
         }
 
 
-        /* =========================
+
+        /* =========================================
+           GALLERY
+        ========================================= */
+
+        #gallery {
+
+            display: none;
+
+            background: white;
+
+        }
+
+
+        .gallery-header {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .back-button {
+
+            display: inline-block;
+
+            margin-top: 15px;
+
+            padding: 10px 20px;
+
+            border-radius: 25px;
+
+            background: #222;
+
+            color: white;
+
+            cursor: pointer;
+
+        }
+
+
+        .photo-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(240px, 1fr)
+                );
+
+            gap: 15px;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+        }
+
+
+        .photo {
+
+            height: 230px;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            background: #eee;
+
+            cursor: pointer;
+
+        }
+
+
+        .photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.3s;
+
+        }
+
+
+        .photo:hover img {
+
+            transform: scale(1.05);
+
+        }
+
+
+
+        /* =========================================
+           IMAGE VIEWER
+        ========================================= */
+
+        .image-viewer {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                rgba(0,0,0,0.92);
+
+            z-index: 2000;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 30px;
+
+        }
+
+
+        .image-viewer.active {
+
+            display: flex;
+
+        }
+
+
+        .viewer-image {
+
+            max-width: 90%;
+
+            max-height: 85vh;
+
+            object-fit: contain;
+
+        }
+
+
+        .close-viewer {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 30px;
+
+            font-size: 40px;
+
+            color: white;
+
+            cursor: pointer;
+
+        }
+
+
+
+        /* =========================================
            LOCATION
-        ========================== */
+        ========================================= */
 
         #location {
 
@@ -306,22 +574,28 @@
 
         }
 
+
         .map {
 
             max-width: 1000px;
 
             height: 450px;
 
-            margin: 40px auto 0;
+            margin:
+                40px
+                auto
+                0;
 
             border-radius: 12px;
 
             overflow: hidden;
 
             box-shadow:
-                0 5px 20px rgba(0,0,0,0.15);
+                0 5px 20px
+                rgba(0,0,0,0.15);
 
         }
+
 
         .map iframe {
 
@@ -334,9 +608,10 @@
         }
 
 
-        /* =========================
+
+        /* =========================================
            CONTACT
-        ========================== */
+        ========================================= */
 
         #contact {
 
@@ -347,6 +622,7 @@
             text-align: center;
 
         }
+
 
         .contact-info {
 
@@ -359,9 +635,10 @@
         }
 
 
-        /* =========================
+
+        /* =========================================
            FOOTER
-        ========================== */
+        ========================================= */
 
         footer {
 
@@ -376,9 +653,26 @@
         }
 
 
-        /* =========================
+
+        /* =========================================
+           LOADING
+        ========================================= */
+
+        .loading {
+
+            text-align: center;
+
+            color: #777;
+
+            padding: 30px;
+
+        }
+
+
+
+        /* =========================================
            MOBILE
-        ========================== */
+        ========================================= */
 
         @media (max-width: 700px) {
 
@@ -388,11 +682,13 @@
 
             }
 
+
             .school-name {
 
                 font-size: 16px;
 
             }
+
 
             .nav-links {
 
@@ -400,21 +696,33 @@
 
             }
 
+
             .nav-links a {
 
                 font-size: 12px;
 
             }
 
+
             section {
 
-                padding: 60px 5%;
+                padding:
+                    60px
+                    5%;
 
             }
+
 
             .section-title {
 
                 font-size: 29px;
+
+            }
+
+
+            .photo {
+
+                height: 250px;
 
             }
 
@@ -425,12 +733,13 @@
 </head>
 
 
+
 <body>
 
 
-    <!-- =========================
+    <!-- =========================================
          NAVIGATION
-    ========================== -->
+    ========================================== -->
 
     <nav>
 
@@ -444,23 +753,33 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#home">Home</a>
+                <a href="#home">
+                    Home
+                </a>
             </li>
 
             <li>
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
             </li>
 
             <li>
-                <a href="#archive">Archive</a>
+                <a href="#archive">
+                    Archive
+                </a>
             </li>
 
             <li>
-                <a href="#location">Location</a>
+                <a href="#location">
+                    Location
+                </a>
             </li>
 
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    Contact
+                </a>
             </li>
 
         </ul>
@@ -469,32 +788,46 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          HOME
-    ========================== -->
+    ========================================== -->
 
-    <section class="hero" id="home">
+    <section
+        class="hero"
+        id="home"
+    >
 
         <div class="hero-content">
 
             <h1>
+
                 P.M. Shri Raja Ka Rampur
+
             </h1>
 
+
             <h2>
+
                 Government School
+
             </h2>
 
+
             <p>
-                Welcome to the official website of
-                P.M. Shri Raja Ka Rampur.
+
+                Welcome to the official website
+                of P.M. Shri Raja Ka Rampur.
+
             </p>
+
 
             <a
                 href="#location"
                 class="location-button"
             >
+
                 📍 View School Location
+
             </a>
 
         </div>
@@ -503,26 +836,30 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          ABOUT
-    ========================== -->
+    ========================================== -->
 
     <section id="about">
 
         <h2 class="section-title">
+
             About Our School
+
         </h2>
+
 
         <p class="section-text">
 
-            P.M. Shri Raja Ka Rampur is a government school
-            dedicated to providing education and creating a
-            positive learning environment for students.
+            P.M. Shri Raja Ka Rampur is a government
+            school serving the local community and
+            providing education to students.
 
             <br><br>
 
-            Here we will add the actual information and history
-            of the school.
+            Information about the school's history,
+            educational activities and other details
+            can be added here.
 
         </p>
 
@@ -530,145 +867,34 @@
 
 
 
-    <!-- =========================
-         ARCHIVE
-    ========================== -->
+    <!-- =========================================
+         ARCHIVE CATEGORIES
+    ========================================== -->
 
     <section id="archive">
 
         <h2 class="section-title">
+
             School Archive
+
         </h2>
+
 
         <p class="archive-intro">
 
-            Explore photographs and memories from our school.
+            Explore photographs and memories
+            from our school.
 
         </p>
 
 
-        <div class="archive-categories">
+        <div id="archiveCategories">
 
+            <div class="loading">
 
-            <a
-                href="archives/school-building/"
-                class="archive-card"
-            >
+                Loading archive...
 
-                <div class="archive-icon">
-                    🏫
-                </div>
-
-                <h3>
-                    School Building
-                </h3>
-
-                <p>
-                    School campus and buildings
-                </p>
-
-            </a>
-
-
-            <a
-                href="archives/computer-lab/"
-                class="archive-card"
-            >
-
-                <div class="archive-icon">
-                    💻
-                </div>
-
-                <h3>
-                    Computer Lab
-                </h3>
-
-                <p>
-                    Computer lab photographs
-                </p>
-
-            </a>
-
-
-            <a
-                href="archives/classrooms/"
-                class="archive-card"
-            >
-
-                <div class="archive-icon">
-                    📚
-                </div>
-
-                <h3>
-                    Classrooms
-                </h3>
-
-                <p>
-                    Classroom photographs
-                </p>
-
-            </a>
-
-
-            <a
-                href="archives/sports/"
-                class="archive-card"
-            >
-
-                <div class="archive-icon">
-                    ⚽
-                </div>
-
-                <h3>
-                    Sports
-                </h3>
-
-                <p>
-                    Sports and activities
-                </p>
-
-            </a>
-
-
-            <a
-                href="archives/events/"
-                class="archive-card"
-            >
-
-                <div class="archive-icon">
-                    🎉
-                </div>
-
-                <h3>
-                    Events
-                </h3>
-
-                <p>
-                    School events and programmes
-                </p>
-
-            </a>
-
-
-            <a
-                href="archives/other/"
-                class="archive-card"
-            >
-
-                <div class="archive-icon">
-                    📷
-                </div>
-
-                <h3>
-                    Other
-                </h3>
-
-                <p>
-                    Other school photographs
-                </p>
-
-            </a>
-
+            </div>
 
         </div>
 
@@ -676,24 +902,81 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
+         PHOTO GALLERY
+    ========================================== -->
+
+    <section id="gallery">
+
+        <div class="gallery-header">
+
+            <h2
+                class="section-title"
+                id="galleryTitle"
+            >
+
+                Gallery
+
+            </h2>
+
+
+            <p class="section-text">
+
+                School photographs
+
+            </p>
+
+
+            <button
+                class="back-button"
+                onclick="showArchive()"
+            >
+
+                ← Back to Archive
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="photo-grid"
+            id="photoGrid"
+        >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
          LOCATION
-    ========================== -->
+    ========================================== -->
 
     <section id="location">
 
         <h2 class="section-title">
+
             School Location
+
         </h2>
+
 
         <p class="section-text">
 
-            Find P.M. Shri Raja Ka Rampur on Google Maps.
+            Find P.M. Shri Raja Ka Rampur
+            on Google Maps.
 
         </p>
 
 
         <div class="map">
+
+            <!--
+                REPLACE THIS WITH YOUR
+                GOOGLE MAPS EMBED LINK
+            -->
 
             <iframe
 
@@ -713,14 +996,16 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          CONTACT
-    ========================== -->
+    ========================================== -->
 
     <section id="contact">
 
         <h2 class="section-title">
+
             Contact
+
         </h2>
 
 
@@ -760,15 +1045,565 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          FOOTER
-    ========================== -->
+    ========================================== -->
 
     <footer>
 
         © 2026 P.M. Shri Raja Ka Rampur
 
     </footer>
+
+
+
+    <!-- =========================================
+         FULL SCREEN IMAGE VIEWER
+    ========================================== -->
+
+    <div
+        class="image-viewer"
+        id="imageViewer"
+        onclick="closeViewer()"
+    >
+
+        <span
+            class="close-viewer"
+        >
+            ×
+        </span>
+
+
+        <img
+            class="viewer-image"
+            id="viewerImage"
+            src=""
+            alt="School photograph"
+        >
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+
+        /* =========================================
+           GITHUB SETTINGS
+        ========================================== */
+
+        const GITHUB_USERNAME =
+            "Samayshakya996";
+
+
+        const GITHUB_REPOSITORY =
+            "P.M-shri-Raja-Ka-Rampur";
+
+
+        const ARCHIVE_PATH =
+            "archives";
+
+
+        const GITHUB_API =
+            `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/contents/${ARCHIVE_PATH}`;
+
+
+
+        /* =========================================
+           ICONS FOR ARCHIVE CATEGORIES
+        ========================================== */
+
+        const categoryIcons = {
+
+            "school-building": "🏫",
+
+            "computer-lab": "💻",
+
+            "classrooms": "📚",
+
+            "sports": "⚽",
+
+            "events": "🎉",
+
+            "independence-day": "🇮🇳",
+
+            "republic-day": "🇮🇳",
+
+            "other": "📷"
+
+        };
+
+
+
+        /* =========================================
+           FORMAT CATEGORY NAME
+        ========================================== */
+
+        function formatCategoryName(name) {
+
+            return name
+
+                .replace(/[-_]/g, " ")
+
+                .replace(/\b\w/g, letter =>
+                    letter.toUpperCase()
+                );
+
+        }
+
+
+
+        /* =========================================
+           GET CATEGORY ICON
+        ========================================== */
+
+        function getCategoryIcon(name) {
+
+            return categoryIcons[name]
+                || "📷";
+
+        }
+
+
+
+        /* =========================================
+           LOAD ARCHIVE FOLDERS
+        ========================================== */
+
+        async function loadArchives() {
+
+            const container =
+                document.getElementById(
+                    "archiveCategories"
+                );
+
+
+            try {
+
+                const response =
+                    await fetch(GITHUB_API);
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to load archives"
+                    );
+
+                }
+
+
+                const items =
+                    await response.json();
+
+
+                const folders =
+                    items.filter(
+                        item =>
+                            item.type === "dir"
+                    );
+
+
+                container.innerHTML = "";
+
+
+                if (folders.length === 0) {
+
+                    container.innerHTML = `
+
+                        <div class="loading">
+
+                            No archive categories
+                            have been added yet.
+
+                        </div>
+
+                    `;
+
+                    return;
+
+                }
+
+
+                folders.forEach(folder => {
+
+                    const card =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    card.className =
+                        "archive-card";
+
+
+                    card.innerHTML = `
+
+                        <div class="archive-icon">
+
+                            ${getCategoryIcon(
+                                folder.name
+                            )}
+
+                        </div>
+
+
+                        <h3>
+
+                            ${formatCategoryName(
+                                folder.name
+                            )}
+
+                        </h3>
+
+
+                        <p>
+
+                            View photographs
+
+                        </p>
+
+                    `;
+
+
+                    card.addEventListener(
+                        "click",
+                        () =>
+                            openGallery(
+                                folder.name
+                            )
+                    );
+
+
+                    container.appendChild(card);
+
+                });
+
+
+            }
+
+            catch (error) {
+
+                console.error(error);
+
+
+                container.innerHTML = `
+
+                    <div class="loading">
+
+                        Unable to load archive.
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+
+        /* =========================================
+           OPEN GALLERY
+        ========================================== */
+
+        async function openGallery(
+            folderName
+        ) {
+
+            const gallery =
+                document.getElementById(
+                    "gallery"
+                );
+
+
+            const archive =
+                document.getElementById(
+                    "archive"
+                );
+
+
+            const title =
+                document.getElementById(
+                    "galleryTitle"
+                );
+
+
+            const grid =
+                document.getElementById(
+                    "photoGrid"
+                );
+
+
+            title.textContent =
+                formatCategoryName(
+                    folderName
+                );
+
+
+            grid.innerHTML = `
+
+                <div class="loading">
+
+                    Loading photographs...
+
+                </div>
+
+            `;
+
+
+            archive.style.display =
+                "none";
+
+
+            gallery.style.display =
+                "block";
+
+
+            gallery.scrollIntoView({
+                behavior: "smooth"
+            });
+
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        `https://api.github.com/repos/` +
+
+                        `${GITHUB_USERNAME}/` +
+
+                        `${GITHUB_REPOSITORY}/contents/` +
+
+                        `${ARCHIVE_PATH}/` +
+
+                        `${folderName}`
+
+                    );
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to load photographs"
+                    );
+
+                }
+
+
+                const files =
+                    await response.json();
+
+
+                const images =
+                    files.filter(file =>
+
+                        file.type === "file" &&
+
+                        /\.(jpg|jpeg|png|gif|webp)$/i
+                            .test(file.name)
+
+                    );
+
+
+                grid.innerHTML = "";
+
+
+                if (images.length === 0) {
+
+                    grid.innerHTML = `
+
+                        <div class="loading">
+
+                            No photographs
+                            have been uploaded
+                            to this archive yet.
+
+                        </div>
+
+                    `;
+
+                    return;
+
+                }
+
+
+                images.forEach(image => {
+
+                    const photo =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    photo.className =
+                        "photo";
+
+
+                    const img =
+                        document.createElement(
+                            "img"
+                        );
+
+
+                    img.src =
+                        image.download_url;
+
+
+                    img.alt =
+                        formatCategoryName(
+                            folderName
+                        );
+
+
+                    img.loading =
+                        "lazy";
+
+
+                    photo.appendChild(img);
+
+
+                    photo.onclick = () => {
+
+                        openViewer(
+                            image.download_url
+                        );
+
+                    };
+
+
+                    grid.appendChild(photo);
+
+                });
+
+
+            }
+
+            catch (error) {
+
+                console.error(error);
+
+
+                grid.innerHTML = `
+
+                    <div class="loading">
+
+                        Unable to load photographs.
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+
+        /* =========================================
+           RETURN TO ARCHIVE
+        ========================================== */
+
+        function showArchive() {
+
+            document.getElementById(
+                "gallery"
+            ).style.display = "none";
+
+
+            document.getElementById(
+                "archive"
+            ).style.display = "block";
+
+
+            document.getElementById(
+                "archive"
+            ).scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+
+        /* =========================================
+           IMAGE VIEWER
+        ========================================== */
+
+        function openViewer(
+            imageURL
+        ) {
+
+            const viewer =
+                document.getElementById(
+                    "imageViewer"
+                );
+
+
+            const image =
+                document.getElementById(
+                    "viewerImage"
+                );
+
+
+            image.src =
+                imageURL;
+
+
+            viewer.classList.add(
+                "active"
+            );
+
+        }
+
+
+
+        function closeViewer() {
+
+            document.getElementById(
+                "imageViewer"
+            ).classList.remove(
+                "active"
+            );
+
+        }
+
+
+
+        /* =========================================
+           ESCAPE KEY
+        ========================================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    closeViewer();
+
+                }
+
+            }
+        );
+
+
+
+        /* =========================================
+           LOAD WEBSITE
+        ========================================== */
+
+        loadArchives();
+
+
+    </script>
 
 
 </body>
